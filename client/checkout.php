@@ -29,11 +29,6 @@
                           <label for="" class="form-label">Số điện thoại</label>
                           <input class="form-control" type="text" name="tel_user" placeholder="Số điện thoại" value="<?=$tel?>" >
                         
-                       
-                    
-                        
-                           
-                           
                             <div class="col-12 mt-4">
                             <label for="" class="form-label">Phương thức thanh toán</label> 
                                 <select name="pttt">

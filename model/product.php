@@ -1,8 +1,8 @@
 <?php
 require_once 'pdo.php';
 
-function addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar, $matsan){
-    $sql="INSERT INTO `sanpham`(`id_dm`, `name_sp`, `price_sp`, `desc_sp`, `soluong`, `image_sp`,`matsan`) VALUES ('$category','$product_name','$product_price','$product_desc','$product_quantity','$product_avatar',' $matsan')";
+function addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar){
+    $sql="INSERT INTO `sanpham`(`id_dm`, `name_sp`, `price_sp`, `desc_sp`, `soluong`, `image_sp`) VALUES ('$category','$product_name','$product_price','$product_desc','$product_quantity','$product_avatar')";
     return pdo_execute($sql);
 }
 function delete_pro($id_sp){
@@ -51,7 +51,7 @@ function searchnbyid_dm($id_dm){
     return $Product;
 }
 function load(){
-    $sql = "SELECT * FROM `sanpham`";
+    $sql = "SELECT * FROM `sanpham` ";
     $list = pdo_query($sql);
     return $list;
 }
@@ -70,7 +70,7 @@ function loadAllProduct_admin($page, $soSp) {
     $sql = "SELECT sp.id_sp, sp.name_sp, sp.price_sp, sp.id_dm, sp.thongso, sp.desc_sp, sp.soluong, sp.image_sp, sp.luotban, sp.matsan, dm.name_dm  FROM `sanpham` as sp
     INNER JOIN `danhmuc` as dm 
     ON sp.id_dm = dm.id_dm
-    ORDER BY id_sp 
+    ORDER BY id_sp DESC
     LIMIT ".$batdau.",".$soSp;
     $list = pdo_query($sql);
     return $list;

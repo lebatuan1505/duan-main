@@ -25,13 +25,7 @@
                 <?php } ?>
             </select>
         </div> <br>
-        <div class="form-group">
-            <select name="matsan" id="matsan">
-                <option value="1">Cỏ nhân tạo</option>
-                <option value="2">Cỏ tự nhiên</option>
-                <option value="3">Phụ kiện</option>
-            </select>
-        </div>
+        
         <div class="form-group">
             <label>Tên sản phẩm</label>
             <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" id="product_name" name="product_name">

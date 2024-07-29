@@ -1,12 +1,12 @@
 
-<main class="main" style="min-height:150vh;">
+<main class="main mb-3" >
     <div class="container">
         <div class="profile">
-            <div class="profile-main">
-                <div class="options">
+            <div class="row d-flex justify-content-between align-items-start">
+                <div class=" col-3">
                     <h2 class="option-heading">Cài Đặt</h2>
-                    <ul class="option-sidebar">
-                        <li class="active">
+                    <ul class="option-sidebar w-100">
+                        <li class="active w-100">
                             <i class="fa-solid fa-user"></i>
                             <a href="">Cài đặt tài khoản</a>
                         </li>
@@ -21,7 +21,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="profile-info">
+                <div class=" col-9">
                     <h2 class="profile-heading">Thông tin cá nhân</h2>
                     <form action="?act=update-profile" method="POST" enctype="multipart/form-data">
                         <div class="info-list">

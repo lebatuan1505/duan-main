@@ -107,28 +107,28 @@ if(isset($_GET['act'])) {
             }
             
             break;
-        case 'add-product-with-cat':
-            require_once '../admin/products/addByCat.php';
-            if(isset($_POST['submit'])){
-                $category =  $_POST['category'];
-                $product_name = $_POST['product_name'];
-                $product_price = $_POST['product_price'];
-                $product_desc = $_POST['product_desc'];
-                $product_quantity = $_POST['product_quantity'];
-                $product_avatar = basename($_FILES['product_avatar']['name']);
+        // case 'add-product-with-cat':
+        //     require_once '../admin/products/addByCat.php';
+        //     if(isset($_POST['submit'])){
+        //         $category =  $_POST['category'];
+        //         $product_name = $_POST['product_name'];
+        //         $product_price = $_POST['product_price'];
+        //         $product_desc = $_POST['product_desc'];
+        //         $product_quantity = $_POST['product_quantity'];
+        //         $product_avatar = basename($_FILES['product_avatar']['name']);
 
-                // Di chuyển tệp ảnh vào thư mục img
-                $target_dir = "../img/";
-                $target_file = $target_dir . $product_avatar;
-                move_uploaded_file($_FILES["product_avatar"]["tmp_name"], $target_file);
-                $matsan = $_POST['matsan'];
-                addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar,$matsan);
-                header("location: index.php?act=list-products");
-                exit();
+        //         // Di chuyển tệp ảnh vào thư mục img
+        //         $target_dir = "../img/";
+        //         $target_file = $target_dir . $product_avatar;
+        //         move_uploaded_file($_FILES["product_avatar"]["tmp_name"], $target_file);
+        //         $matsan = $_POST['matsan'];
+        //         addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar,$matsan);
+        //         header("location: index.php?act=list-products");
+        //         exit();
 
 
-            }
-            break;
+        //     }
+        //     break;
 
         case 'delete-product':
             if(isset($_GET['id_sp'])){

@@ -121,8 +121,8 @@ else{
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+              <ul class="navbar-nav justify-content-between d-flex">
                 <li class="nav-item pr-3">
                   <a class="nav-link fw-bold active" aria-current="page" href="index.php">Trang chủ</a>
                 </li>
@@ -130,10 +130,10 @@ else{
                   <a class="nav-link fw-bold" href="index.php?act=all-product">Tất cả sản phẩm</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold" href="index.php?act=loai&matsan=2">Giày cỏ tự nhiên</a>
+                  <!-- <a class="nav-link fw-bold" href="index.php?act=loai&matsan=2">Giày cỏ tự nhiên</a> -->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold" href="index.php?act=loai&matsan=1">Giày cỏ nhân tạo</a>
+                  <!-- <a class="nav-link fw-bold" href="index.php?act=loai&matsan=1">Giày cỏ nhân tạo</a> -->
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fw-bold" href="index.php?act=loai&matsan=3">Phụ kiện</a>

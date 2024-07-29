@@ -38,23 +38,23 @@
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
           </ol>
-          <div class=" carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://theme.hstatic.net/200000278317/1000929405/14/slideshow_1.jpg?v=1170"
+          <div class="carousel-inner" style="height: 520px">
+            <div class="carousel-item active" style="">
+              <img src="https://i.ytimg.com/vi/OEKq7nQ9cZQ/maxresdefault.jpg"
                 class="d-block w-100" alt="Image 1">
             </div>
             <div class="carousel-item">
               <a href="index.php?act=all-product "> <img
-                  src="https://theme.hstatic.net/200000278317/1000929405/14/slideshow_4.jpg?v=1170"
+                  src="https://img.zcool.cn/community/0199b35785d16e0000018c1b27c982.jpg@1280w_1l_2o_100sh.jpg"
                   class="d-block w-100" alt="Image 2"></a>
             </div>
             <div class="carousel-item">
-              <img src="https://theme.hstatic.net/200000278317/1000929405/14/slideshow_7.jpg?v=1170"
+              <img src="https://socalskateshop.com/mm5/graphics/00000001/37/Vans.jpg"
                 class="d-block w-100" alt="Image 3">
             </div>
-            <div class="carousel-item">
-              <img src="https://theme.hstatic.net/200000278317/1000929405/14/slideshow_7.jpg?v=1170"
-                class="d-block w-100" alt="Image 4">
+            <div class="carousel-item h-100">
+              <img src="https://file.hstatic.net/1000230642/collection/3_da9a91027cd0488581c18e767bd6e453.jpg"
+                class="d-block w-100 h-100" alt="Image 4">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -169,14 +169,13 @@
         require_once '../model/List.php';
         $listProduct = NewProduct();
         foreach ($listProduct as $sp) { ?>
-          <div class="col-3  mt-3 mb-3 d-flex justify-content-center">
+          <div class="col-3  mt-3 mb-3 d-flex justify-content-center" style="">
             <a href="?act=viewProduct&id_sp=<?= $sp['id_sp'] ?>&id_dm=<?= $sp['id_dm'] ?>" class="text-black"
               style="text-decoration: none;">
               <form action="?act=add-to-cart" method="POST" enctype="multipart/form-data" class="position-relative">
                 <div class="product me-2">
                   <input type="hidden" name="id_sp" value="<?= $sp['id_sp'] ?>">
-                  <img id="image" src="../img/<?= $sp['image_sp'] ?>" alt="Product 1"
-                    class="w-100 h-100">
+                  <img id="image" src="../img/<?= $sp['image_sp'] ?>" alt="Product 1" class="w-100 " style="height: 250px;">
                   <input type="hidden" name="image_sp" value="<?= $sp['image_sp'] ?>">
                   <input type="hidden" name="soluongcart" value="1">
                   <input type="hidden" name="selectedSize" value="0">
