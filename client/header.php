@@ -45,7 +45,7 @@
             <div class="ms-auto p-3 " style="width:700px;">
               <form class="d-flex " role="search" method="POST" action="?act=search" >
                 <input class="form-control me-2" type="search" name="content" placeholder="Bạn đang tìm kiếm..." aria-label="Search">
-                <button class="btn btn-outline-success" name="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn btn-outline-success " name="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
             <!-- kết thúc thanh tìm kiếm  -->
@@ -140,7 +140,7 @@ else{
                 </li>
                 <li class="nav-item dropdown ">
                   <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Hãng sản xuất
+                    Thương Hiệu
                   </a>
                   <ul class="dropdown-menu ">
                   <?php

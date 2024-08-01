@@ -2,7 +2,7 @@
 <form class="price-slider-amount" method="POST" action="?act=search">
    <div class="label-input">
       <input type="text" name="content" placeholder="Tìm kiếm" />
-      <button class="filter-btn" name="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="filter-btn border-0 p-1" name="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
    </div>
 </form>
 

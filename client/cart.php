@@ -34,7 +34,7 @@
                             <tr class="cart_item container">
                                 <td class="max">
                                     <form method="POST" action="?act=delete-cart&id_sp=<?= $id_sp ?>">
-                                        <input type="hidden" name="cart_id" value="<?= $id_sp ?>">
+                                        <input type="hidden" name="cart_id" value="<?= $id_sp?>">
                                         <button type="submit" name="delete" class="btn btn-danger"
                                             onclick="return confirm('Bạn có chắc chắn xóa sản phẩm khỏi giỏ hàng ?')">
                                             <i class="fa-solid fa-trash"></i>
