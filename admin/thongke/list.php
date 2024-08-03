@@ -15,7 +15,7 @@ function thongke_donhthu($subDays, $now){
 
 $thongkedt = thongke_donhthu($subDays, $now);
 
-$chart_data = array(); // Khởi tạo mảng chart_data trước khi sử dụng
+$chart_data = array(); // khởi tạo mảng
 foreach ($thongkedt as $tkdt) {
     if ($tkdt['trangthaitt'] == 1) {
         $chart_data[] = array(
