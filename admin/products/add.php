@@ -76,7 +76,7 @@
         descError.textContent = "";
         avatarError.textContent = "";
         quantityError.textContent = "";
-
+        // validate các trường nhập vào 
         if (name === "") {
             nameError.textContent = "Tên sản phẩm không được để trống";
             return false;
@@ -92,7 +92,7 @@
             return false;
         }
 
-        // Kiểm tra định dạng ảnh
+        // Kiểm tra định dạng ảnh có đúng với validate
         var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
         if (!allowedExtensions.exec(avatar)) {
             avatarError.textContent = "Vui lòng chọn file ảnh có định dạng JPG hoặc PNG";

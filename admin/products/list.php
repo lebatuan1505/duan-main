@@ -2,13 +2,12 @@
 <form class="price-slider-amount" method="POST" action="?act=search">
    <div class="label-input">
       <input type="text" name="content" placeholder="Tìm kiếm" />
-      <button class="filter-btn border-0 p-1" name="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="filter-btn border-0 p-1" name="search" type="submit"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
    </div>
 </form>
 
 <table class="table mt-4">
-
-
    <thead>
       <tr>
          <th scope="col">#</th>
@@ -22,11 +21,12 @@
    </thead>
    <tbody>
       <?php
-
+      // gọi ra phương thức sửa và xóa 
       foreach ($list as $pro) {
          $sua = "index.php?act=update-product&id_sp=" . $pro['id_sp'] . "&id_dm=" . $pro['id_dm'];
          $xoa = "index.php?act=delete-product&id_sp=" . $pro['id_sp'];
          ?>
+         <!-- bảng sản phẩm -->
          <tr>
             <td scope="row"><?= $pro['id_sp'] ?></td>
             <td scope="row"><?= $pro['name_sp'] ?></td>
@@ -49,6 +49,7 @@
    </tbody>
 
 </table>
+<!-- phân trang -->
 <div class="container mt-2 d-flex justify-content-center pagination" id="pagination">
 
 
