@@ -40,7 +40,7 @@ if ($Product['matsan'] == 3) {
     }
   </style>
 
-  <div class="row">
+  <div class="row justify-content-between">
 
 
     <div class="col-lg-6 d-flex justify-content-center p-1 border mb-1 pb-9">
@@ -55,9 +55,9 @@ if ($Product['matsan'] == 3) {
 
     </div>
     <div class="col-lg-6">
-      <h4><?= $Product['name_sp'] ?> </h4>
+      <h4 class="fw-bold fs-2"><?= $Product['name_sp'] ?> </h4>
       </p>
-      <h3 class="text-danger"><?= number_format((int) $Product['price_sp'], 0, ",", ".") ?>₫</h3>
+      <h3 class="text-danger fw-semibold"><?= number_format((int) $Product['price_sp'], 0, ",", ".") ?>₫</h3>
 
       <!-- Chọn màu -->
       <div class="container">
@@ -112,7 +112,7 @@ if ($Product['matsan'] == 3) {
 
       </div>
     </div>
-    <h3>Sản phẩm khác</h3>
+    <h3 class="mt-3 fw-bold fs-2">Sản phẩm khác</h3>
     <div class="container row">
 
 
@@ -204,7 +204,7 @@ if ($Product['matsan'] == 3) {
               <input type="hidden" name="id_user" value="<?= $_SESSION['user']['id_user'] ?>">
               <textarea class="form-control" rows="5" id="comment" name="cmt"></textarea>
             </div>
-            <button type="submit" name="comment" class="btn btn-primary">Gửi nhận xét</button>
+            <button type="submit" name="comment" class="btn btn-primary mt-3">Gửi nhận xét</button>
           </form>
         </div>
       </div>
