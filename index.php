@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require_once 'header.php';
+require_once '../header.php';
 
 require_once '../model/pdo.php';
 require_once '../model/category.php';

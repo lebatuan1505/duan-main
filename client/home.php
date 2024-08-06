@@ -132,8 +132,7 @@
                 <div class="product me-2">
                   <input type="hidden" name="id_sp" value="<?= $sp['id_sp'] ?>">
                   <div class="overflow-hidden w-100" style="height: 300px;">
-                    <img src="../img/<?= $sp['image_sp'] ?>" alt="Product 1" 
-                      class="justify-content-center w-100 h-100">
+                    <img src="../img/<?= $sp['image_sp'] ?>" alt="Product 1" class="justify-content-center w-100 h-100">
                   </div>
                   <input type="hidden" name="image_sp" value="<?= $sp['image_sp'] ?>">
                   <input type="hidden" name="soluongcart" value="1">
@@ -213,8 +212,10 @@
 
     <div class="container">
       <hr>
-      <h3 class="text-center">KHÁCH HÀNG CỦA 8 FOOTBALL</h3>
-      <img src="../img/banner-giua.jpg" alt="" width="100%">
+      <h3 class="text-center">CÁC THƯƠNG HIỆU NỔI TIẾNG</h3>
+      <div class="justify-content-center align-items-center d-flex" >
+        <img src="../img/brand.jpg" alt="" width="70%" height="">
+      </div>
     </div>
 
 </body>
