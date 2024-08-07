@@ -55,4 +55,5 @@ function del_user($id_user){
     $sql="DELETE FROM `user` WHERE id_user = $id_user";
     pdo_execute($sql);
 }
-?>
+?> 
+<!-- hoàn thành dự án -->
