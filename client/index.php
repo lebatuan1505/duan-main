@@ -39,7 +39,7 @@ if (isset($_GET['act'])) {
         $hien_thi_so_trang = hien_thi_so_trang_view($matsan, $total, $soSp);
       }
 
-      require_once './view/product/product.php';
+      require_once './view/product/product.php'; //include tệp products từ view/product vào scrip
       break;
     case 'bo-loc':
       if (isset($_GET['filter'])) {
@@ -71,7 +71,7 @@ if (isset($_GET['act'])) {
 
 
       }
-      require_once 'view/product/product.php';
+      require_once 'view/product/product.php'; //include tệp products từ view/product vào scrip
       break;
     case 'search':
       if (isset($_POST['search'])) {
@@ -86,7 +86,7 @@ if (isset($_GET['act'])) {
         $total = search($content);
         $hien_thi_so_trang = hien_thi_so_trang_search($total, $soSp);
 
-        require_once './view/product/product.php';
+        require_once './view/product/product.php';//include tệp products từ view/product vào scrip
       }
       break;
     case 'search-by-id':
@@ -103,7 +103,7 @@ if (isset($_GET['act'])) {
         $hien_thi_so_trang = hien_thi_so_trang_id_dm($id_dm, $total, $soSp);
       }
 
-      require_once './view/product/product.php';
+      require_once './view/product/product.php';//include tệp products từ view/product vào scrip
 
       break;
     case '/':
@@ -114,7 +114,7 @@ if (isset($_GET['act'])) {
       break;
 
     case 'login':
-      require_once './view/users/login.php';
+      require_once './view/users/login.php'; // phần đăng nhập
 
       if (isset($_POST['submit'])) {
         $email = $_POST['email'];
@@ -140,7 +140,7 @@ if (isset($_GET['act'])) {
         }
       }
       break;
-    case 'logout':
+    case 'logout': // phần đăng xuất
       session_unset();
       session_destroy();
       echo '
@@ -153,7 +153,7 @@ if (isset($_GET['act'])) {
         ';
       break;
     case 'profile':
-      require_once './view/users/profile.php';
+      require_once './view/users/profile.php'; // trả về trang cá nhân
       break;
 
     case 'update-profile':

@@ -40,10 +40,14 @@ foreach($User as $us){
         </select>
      </div>
 
-     
+     <br>
 
      <div class="d-flex justify-content-between"> 
           <button type="submit" class="btn btn-primary w-25 mt-4" name="update-user">Cập nhật</button>
           <button type="reset" class="btn btn-warning text-white w-25 mt-4">Reset</button>
      </div>
+     <!-- <div class="d-flex justify-content-between"> 
+          
+          <button type="reset" class="btn btn-warning text-white w-25 mt-4">Reset</button>
+     </div> -->
 </form>
