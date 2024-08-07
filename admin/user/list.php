@@ -10,6 +10,13 @@
           <th scope="col">Số điện thoại</th>
           <th scope="col">Vai trò</th>
           <th scope="col">Hành động</th>
+          
+          <!-- <th scope="col">#</th>   
+          <th scope="col">Tên </th>
+          <th scope="col">Email</th>
+          <th scope="col">Số điện thoại</th>
+          <th scope="col">Vai trò</th>
+          <th scope="col">Hành động</th> -->
      </tr>
      </thead>
      <tbody>
