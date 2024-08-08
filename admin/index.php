@@ -8,6 +8,8 @@ require_once '../model/product.php';
 require_once '../model/user.php';
 require_once '../model/list.php';
 require_once '../model/bill.php';
+require_once '../admin/categories/update.php';
+
 
 
 if(isset($_GET['act'])) {
@@ -34,8 +36,6 @@ if(isset($_GET['act'])) {
                 }
                 break;
             
-            
-
 
         case 'update-category':
             if(isset($_GET['id_dm'])){
@@ -50,7 +50,6 @@ if(isset($_GET['act'])) {
                 }
             }
 
-            require_once '../admin/categories/update.php';
             break;
         case 'thong-ke':
             require_once 'thongke/list.php';
@@ -107,28 +106,6 @@ if(isset($_GET['act'])) {
             }
             
             break;
-        // case 'add-product-with-cat':
-        //     require_once '../admin/products/addByCat.php';
-        //     if(isset($_POST['submit'])){
-        //         $category =  $_POST['category'];
-        //         $product_name = $_POST['product_name'];
-        //         $product_price = $_POST['product_price'];
-        //         $product_desc = $_POST['product_desc'];
-        //         $product_quantity = $_POST['product_quantity'];
-        //         $product_avatar = basename($_FILES['product_avatar']['name']);
-
-        //         // Di chuyển tệp ảnh vào thư mục img
-        //         $target_dir = "../img/";
-        //         $target_file = $target_dir . $product_avatar;
-        //         move_uploaded_file($_FILES["product_avatar"]["tmp_name"], $target_file);
-        //         $matsan = $_POST['matsan'];
-        //         addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar,$matsan);
-        //         header("location: index.php?act=list-products");
-        //         exit();
-
-
-        //     }
-        //     break;
 
         case 'delete-product':
             if(isset($_GET['id_sp'])){

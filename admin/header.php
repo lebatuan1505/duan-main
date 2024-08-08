@@ -29,7 +29,7 @@
 
             
         </div>
-
+<!-- menu sidebar -->
         <div class="menu-items">
             <ul class="nav-links m-0 p-0">
                 <li><a href="index.php">
@@ -89,7 +89,6 @@
 
             
             
-            <!--<img src="images/profile.jpg" alt="">-->
            
         </div>
       
