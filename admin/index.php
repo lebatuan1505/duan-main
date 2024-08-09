@@ -8,7 +8,6 @@ require_once '../model/product.php';
 require_once '../model/user.php';
 require_once '../model/list.php';
 require_once '../model/bill.php';
-require_once '../admin/categories/update.php';
 
 
 
@@ -49,7 +48,7 @@ if(isset($_GET['act'])) {
                     exit(); 
                 }
             }
-
+            require_once '../admin/categories/update.php';
             break;
         case 'thong-ke':
             require_once 'thongke/list.php';
@@ -101,8 +100,6 @@ if(isset($_GET['act'])) {
                 addProduct($category,$product_name,$product_price,$product_desc,$product_quantity,$product_avatar,$matsan);
                 header("location: index.php?act=list-products");
                 exit();
-
-
             }
             
             break;
@@ -113,9 +110,9 @@ if(isset($_GET['act'])) {
                 delete_pro($id_sp);
                 header("location: index.php?act=list-products");
                 exit(); 
-            }
-            
-            break;    
+            }        
+            break;
+
             case 'update-product':
                 if(isset($_GET['id_sp'])){
                     $id_sp = $_GET['id_sp'];

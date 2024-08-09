@@ -21,7 +21,7 @@
    </thead>
    <tbody>
       <?php
-      // gọi ra phương thức sửa và xóa 
+      // goi ra phuong thuc sua va xoa sp
       foreach ($list as $pro) {
          $sua = "index.php?act=update-product&id_sp=" . $pro['id_sp'] . "&id_dm=" . $pro['id_dm'];
          $xoa = "index.php?act=delete-product&id_sp=" . $pro['id_sp'];
@@ -49,7 +49,8 @@
    </tbody>
 
 </table>
-<!-- phân trang -->
+
+<!-- phaan trang san pham -->
 <div class="container mt-2 d-flex justify-content-center pagination" id="pagination">
 
 
