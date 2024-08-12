@@ -6,9 +6,9 @@
         <div class="footer-row">
             <img src="https://theme.hstatic.net/200000278317/1000929405/14/logo_medium.png?v=1170" alt="" class="bg-white" >
             <div class="footer-column">
-                <h3 class="footer-heading">8 Football</h3>
+                <h3 class="footer-heading">9 Sneaker</h3>
                 <a href="">Điện thoại: 0339381785</a>
-                <a href="">Email: chienvmph43391@fpt.edu.vn</a>
+                <a href="">Email: thipqph46388@fpt.edu.vn</a>
                 <a href="">Cao đẳng FPT Phố Trịnh Văn Bô, Phường Phương Canh, Quận Từ Liêm, Hà Nội</a>
             </div>
             <div class="footer-column">

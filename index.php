@@ -34,9 +34,6 @@ if(isset($_GET['act'])) {
                 }
                 break;
             
-            
-
-
         case 'update-category':
             if(isset($_GET['id_dm'])){
                 $id_dm = $_GET['id_dm'];

@@ -200,10 +200,6 @@
             </a>
           </div>
         <?php } ?>
-
-
-
-
       </div>
 
       <br>
@@ -213,7 +209,7 @@
     <div class="container">
       <hr>
       <h3 class="text-center">CÁC THƯƠNG HIỆU NỔI TIẾNG</h3>
-      <div class="justify-content-center align-items-center d-flex" >
+      <div class="justify-content-center align-items-center d-flex">
         <img src="../img/brand.jpg" alt="" width="70%" height="">
       </div>
     </div>
