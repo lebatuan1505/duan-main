@@ -129,3 +129,4 @@ function pdo_executeid($sql){
         unset($conn);
     }
 }
+//hoàn thành 
